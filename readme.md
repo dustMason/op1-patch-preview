@@ -4,7 +4,7 @@ OP-1 Patch Preview
 This is the SVG and `<audio>` powered patch preview component featured on https://op1.fun. It has no
 dependencies. To use it:
 
-```
+```javascript
 OP1Player({
   audioElement :document.querySelector("#preview-audio-tag"),
   svgElement: document.querySelector("#waveform-svg-tag"),
@@ -18,7 +18,7 @@ OP1Player({
 There are numerous techniques for creating an array of frames suitable for waveform previews, but the
 one I am using on op1.fun with this component looks like this (ruby):
 
-```
+```ruby
 n_frames = 500 # number of frames to show in the preview
 reduction_window = 100 # each preview frame is an average of 2x this many frames
 
